@@ -2,12 +2,12 @@
 using namespace std;
 
 string  reversestring(string v,int k){
-    int s = 0,e = v.size()-1;
+    int s = k+1,e = v.size()-1;
     while(s<=e){
-        if(s > k)
-            swap(v[s],v[e]);
-            
+        
+        swap(v[s],v[e]); 
         s++;
+        e--;
         
     }
     return v;
